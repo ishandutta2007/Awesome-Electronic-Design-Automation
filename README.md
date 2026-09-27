@@ -1,363 +1,182 @@
-# Awesome-Electronic-Design-Automation
+# Awesome Electronic Design Automation (EDA) ⚡
 
-## Top Electronic Design Automation (EDA) Platforms Ecosystem
+<p align="center">
+  <img src="assets/banner.svg" alt="Awesome Electronic Design Automation Banner" width="100%"/>
+</p>
 
+<p align="center">
+  <a href="https://github.com/ishandutta2007/Awesome-Awesome-Awesome"><img src="https://img.shields.io/badge/Awesome-%E2%9C%94-blueviolet?style=flat-square&logo=github" alt="Awesome"/></a><a href="https://discord.gg/jc4xtF58Ve"><img src="https://img.shields.io/badge/Discord-5865F2?style=for-the-badge&logo=discord&logoColor=white" alt="Discord" /></a>
+  <img src="https://img.shields.io/github/last-commit/ishandutta2007/Awesome-Electronic-Design-Automation?style=flat-square" alt="Last Commit"/>
+  <img src="https://img.shields.io/github/stars/ishandutta2007/Awesome-Electronic-Design-Automation?style=flat-square" alt="Repo Stars"/>
+  <img src="https://img.shields.io/github/license/ishandutta2007/Awesome-Electronic-Design-Automation?style=flat-square" alt="License"/>
+  <a href="https://github.com/ishandutta2007"><img alt="GitHub followers" src="https://img.shields.io/github/followers/ishandutta2007?label=Follow" /></a>
+</p>
 
+## 📌 Top Electronic Design Automation (EDA) Platforms & Open-Silicon Ecosystem 🌐
 
-**Curated List of SaaS Products & Open-Source GitHub Projects**  
+> **Curated Directory of Commercial SaaS Platforms & Open-Source GitHub Repositories for IC Design, Analog Simulation, PCB Layout, and Silicon Verification** 🔌
 
-*Focused on IC Design, PCB Layout, Analog Simulation & Open-Silicon Flows*  
+**Last updated: September 2026** 📅
 
-**Last updated: September 2026**
-
-
-
-This repository tracks notable **SaaS platforms** and **open-source projects** for **Electronic Design Automation (EDA)**. These tools help chip designers, PCB engineers, and hardware teams create, simulate, verify, and manufacture electronic circuits — from custom silicon to production PCBs.
-
-
-
-**Examples** include Cadence Virtuoso, Synopsys Fusion Compiler, Siemens EDA Xpedition, Altium 365, Zuken CR-8000, Silvaco SmartSpice, Keysight ADS, Ansys RedHawk, EasyEDA Pro, and Aldec Riviera-PRO (the category leaders).
-
-
-
-**Open-source emphasis**: The open-source EDA ecosystem has matured dramatically. With **SkyWater SKY130**, **GlobalFoundries GF180MCU**, and **IHP SG13G2** open PDKs, combined with tools like **Yosys**, **OpenROAD**, **Xschem**, **Magic**, and **KLayout**, complete analog and digital IC design flows can now run entirely on open-source software. **KiCad** leads PCB design, with **LibrePCB**, **Horizon EDA**, and **atopile** offering modern alternatives. This section documents every major active project across the full design stack.
-
-
-
-Contributions welcome! Open a PR to add/update entries. Keep descriptions factual and link to official sites.
-
-
-
-## Table of Contents
-
-
-
-- [SaaS/Hosted Platforms](#saas-hosted-platforms)
-
-- [Open-Source GitHub Projects](#open-source-github-projects)
-
-- [How to Contribute](#how-to-contribute)
-
-- [Disclaimer](#disclaimer)
-
-
-
-## SaaS/Hosted Platforms
-
-
-
-- **[Cadence Virtuoso](https://www.cadence.com/)**
-
-  Industry-standard custom IC design platform for analog, mixed-signal, and RF circuits. Provides schematic capture, simulation, layout, and full custom design flows. Used by virtually all major semiconductor companies.
-
-
-
-- **[Synopsys Fusion Compiler](https://www.synopsys.com/)**
-
-  RTL-to-GDSII implementation platform combining synthesis, place-and-route, and optimization. The dominant digital IC implementation solution for advanced nodes.
-
-
-
-- **[Siemens EDA Xpedition](https://eda.sw.siemens.com/)**
-
-  Enterprise PCB design platform for complex multi-board systems. Provides schematic capture, layout, signal integrity, and manufacturing preparation.
-
-
-
-- **[Altium 365](https://www.altium.com/)**
-
-  Cloud-connected PCB design platform. Provides schematic capture, PCB layout, 3D visualization, and collaboration features with browser-based access.
-
-
-
-- **[Zuken CR-8000](https://www.zuken.com/)**
-
-  PCB and multi-board design platform for enterprise electronics. Provides schematic, layout, and manufacturing preparation for complex systems.
-
-
-
-- **[Silvaco SmartSpice](https://silvaco.com/)**
-
-  Analog and mixed-signal circuit simulator for IC design. Provides accurate SPICE modeling and verification for custom circuits.
-
-
-
-- **[Keysight ADS](https://www.keysight.com/)**
-
-  Advanced Design System for RF, microwave, and high-speed digital design. Provides circuit simulation, electromagnetic analysis, and system-level design.
-
-
-
-- **[Ansys RedHawk](https://www.ansys.com/)**
-
-  Power integrity and reliability analysis platform for ICs. Analyzes IR drop, electromigration, and thermal effects in power delivery networks.
-
-
-
-- **[EasyEDA Pro](https://easyeda.com/)**
-
-  Cloud-based PCB design platform with integrated component library and manufacturing. Popular with hobbyists and small teams.
-
-
-
-- **[Aldec Riviera-PRO](https://www.aldec.com/)**
-
-  HDL simulation and verification platform for FPGA and ASIC design. Supports VHDL, Verilog, SystemVerilog, and SystemC.
-
-
-
-## Open-Source GitHub Projects
-
-
-
-### Digital IC Design (RTL to GDSII)
-
-
-
-- **[Yosys](https://github.com/YosysHQ/yosys)**
-
-  Open-source RTL synthesis framework. Converts Verilog RTL to gate-level netlists for FPGA and ASIC flows. The foundation of the open-source digital IC design toolchain, with a GHDL plugin enabling VHDL synthesis . **ISC License**.
-
-
-
-- **[OpenROAD](https://github.com/The-OpenROAD-Project/OpenROAD)**
-
-  Complete RTL-to-GDSII flow with place-and-route, static timing analysis, and power analysis. Integrated with PDNSim for static IR drop analysis in power delivery networks . The core of the OpenLane automated flow . **Apache-2.0**.
-
-
-
-- **[OpenLane](https://github.com/The-OpenROAD-Project/OpenLane)**
-
-  Automated digital ASIC design flow from RTL to GDSII. Originally initiated by Google and SkyWater to enable open-source chip design using the SKY130 PDK. Now supports multiple open PDKs including GF180MCU and IHP SG13G2 .
-
-
-
-- **[OpenSTA](https://github.com/parallaxsw/OpenSTA)**
-
-  Static timing analysis engine for gate-level netlists. Used within the OpenROAD flow for timing signoff . **GPL-3.0**.
-
-
-
-### Analog & Mixed-Signal IC Design
-
-
-
-- **[Xschem](https://github.com/StefanSchippers/xschem)**
-
-  Schematic capture editor for analog and mixed-signal circuit design. Lightweight, fast, and designed for hierarchical designs. The schematic entry tool of choice in open-source analog flows . **GPL-2.0**.
-
-
-
-- **[Ngspice](https://github.com/ngspice/ngspice)**
-
-  The leading open-source mixed-level/mixed-signal circuit simulator. Successor to Berkeley SPICE 3f5, incorporating Xspice and Cider models. Supports nonlinear DC, transient, and linear AC analyses, with mixed-signal simulation by co-simulating with Verilog (via Verilator/Icarus) or VHDL (via GHDL) . Integrated into KiCad for built-in SPICE simulation . **BSD-3-Clause**.
-
-
-
-- **[Xyce](https://github.com/Xyce/Xyce)**
-
-  SPICE-compatible simulator from Sandia National Laboratories, designed for large-scale parallel circuit simulation. Used for full transistor-level simulation sign-off in open-source analog flows .
-
-
-
-- **[Magic VLSI](https://github.com/RTimothyEdwards/magic)**
-
-  Layout editor for custom IC design. Provides interactive layout editing, DRC, extraction, and LVS capabilities. Part of the open-source analog design flow for custom block layout .
-
-
-
-- **[KLayout](https://github.com/KLayout/klayout)**
-
-  High-performance layout viewer and editor. Provides DRC, LVS, and parasitic extraction. Extensible via Python and Ruby APIs. The standard layout verification tool in open-source IC flows .
-
-
-
-### PCB Design
-
-
-
-- **[KiCad](https://gitlab.com/kicad/code/kicad)**
-
-  The leading open-source EDA suite for schematic capture and PCB layout. Used by hobbyists and professionals worldwide. Features hierarchical schematics, up to 32 copper layers, push-and-shove router, differential pair routing, 3D viewer with STEP support, Python scripting API, and integrated Ngspice simulation . CERN has contributed over 1,400 hours of developer time to KiCad, and it joined the Linux Foundation in 2019 . **GPLv3**.
-
-
-
-- **[LibrePCB](https://github.com/LibrePCB/LibrePCB)**
-
-  Modern, intuitive open-source EDA suite for schematic and PCB layout. Features a centralized library manager, design rule checks, multi-platform support, and open file formats. Built with C++ and Qt . **GPLv3**.
-
-
-
-- **[Horizon EDA](https://github.com/carrotIndustries/horizon)**
-
-  Free EDA package for schematic capture and PCB design. Focused on a modern, extensible architecture .
-
-
-
-- **[atopile](https://github.com/atopile/atopile)**
-
-  Language and toolchain to describe electronic circuit boards with code. Replaces point-and-click schematic entry with software development workflows including reuse, validation, and automation. Built with Python . **BSD**.
-
-
-
-### PCB Analysis & Verification
-
-
-
-- **[circuitcore](https://github.com/UnsignedChad/circuitcore)**
-
-  PCB analysis toolkit with four integrated tools: **pdnkit** (power integrity — static IR drop, Z(f) cavity model, decap optimization, SPICE export), **sikit** (signal integrity — trace impedance, S-parameters, eye diagrams, IBIS/IBIS-AMI parsing), **emikit** (EMI/radiated emissions), and **mpkit** (multiphysics — thermal, elasticity). Parses `.kicad_pcb` files into a canonical board model. C++23, Qt6, Eigen, SuiteSparse, optional VTK 9 . **GPL-3.0**.
-
-
-
-- **[OpenEMS](https://github.com/thliebig/openEMS)**
-
-  Electromagnetic field solver for signal integrity and power integrity simulation of PCB designs. Uses FDTD method. Works with Octave/Python scripting and KiCad export macros .
-
-
-
-- **[OpenFASOC](https://github.com/idea-fasoc/OpenFASOC)**
-
-  Open-source analog layout generation. Includes **glayout**, a set of PDK-agnostic building blocks for programmatic analog circuit construction in Python .
-
-
-
-### HDL Simulation & Verification
-
-
-
-- **[Verilator](https://github.com/verilator/verilator)**
-
-  Fast Verilog/SystemVerilog simulator. Compiles HDL to optimized C++/SystemC for cycle-accurate simulation. The fastest open-source Verilog simulator, widely used in digital design verification .
-
-
-
-- **[Icarus Verilog](https://github.com/steveicarus/iverilog)**
-
-  Verilog simulation and synthesis tool. Supports Verilog-2005 and experimental SystemVerilog. Used for digital simulation in open-source ASIC flows .
-
-
-
-- **[GHDL](https://github.com/ghdl/ghdl)**
-
-  Complete VHDL simulator with synthesis capabilities. Supports VHDL-1987 through VHDL-2019, PSL assertions, and co-simulation via VPI/VHPIDIRECT. The standard open-source VHDL simulator .
-
-
-
-- **[NVC](https://github.com/nickg/nvc)**
-
-  VHDL compiler and simulator with experimental Verilog support. Recently became the first "true" open-source mixed-language simulator, compiling Verilog and VHDL sources together sharing a common simulation kernel without source translation .
-
-
-
-- **[Cocotb](https://github.com/cocotb/cocotb)**
-
-  Coroutine-based co-simulation testbench environment for verifying VHDL/Verilog RTL using Python. Enables Python-based verification without HDL testbenches. Used in open-source ASIC flows for digital test benches .
-
-
-
-### Open PDKs (Process Design Kits)
-
-
-
-- **[SkyWater SKY130 PDK](https://github.com/google/skywater-pdk)**
-
-  130nm open-source production PDK developed by Google and SkyWater Technology. Enables fully open-source chip design manufactured at SkyWater's facility. The first major open PDK, supported by OpenLane and the IIC-OSIC-Tools flow .
-
-
-
-- **[GlobalFoundries GF180MCU PDK](https://github.com/google/gf180mcu-pdk)**
-
-  180nm open-source production PDK from Google and GlobalFoundries. Targets the 0.18µm 3.3/6V MCU process technology. Supported by OpenLane and other open-source flows .
-
-
-
-- **[IHP SG13G2 Open PDK](https://github.com/IHP-GmbH/IHP-Open-PDK)**
-
-  130nm SiGe BiCMOS open-source PDK from IHP (Leibniz Institute for High Performance Microelectronics). Targets the SG13G2 process for high-frequency and RF applications. Used in mixed-signal SoC designs including TinyWhisper .
-
-
-
-### Design Automation & Utilities
-
-
-
-- **[CACE](https://github.com/efabless/cace)**
-
-  Python-based framework for running circuit simulations across PVT (process, voltage, temperature) corners. Uses YAML "datasheets" to specify test benches and corners. Runs extraction, DRC, and LVS in parallel .
-
-
-
-- **[RALF](https://github.com/iic-jku/IIC-RALF)**
-
-  Automatic analog layout engine. Generates layout from SPICE netlist (plus config) using Magic as layout backend without manual intervention. Early release with room for improvement in symmetry detection and device support .
-
-
-
-- **[gdsfactory](https://github.com/gdsfactory/gdsfactory)**
-
-  Python library for constructing layout with code. Used for RF/mm-wave component p-cell generation from Python scripts. Layout generated from ~900 lines of code for DRC-clean fabrication .
-
-
-
-- **[Splice](https://github.com/Voidheart88/splice)**
-
-  Fast SPICE simulator focused on better error reporting and parallel element evaluation. Supports .dc, .op, and .ac simulations with adaptive transient time-step control. Network mode for remote simulations via MessagePack protocol .
-
-
-
-### Additional Strong Open-Source Options
-
-
-
-- **PCB Design**: **Fritzing** (open-source, prototyping-focused), **pcb-rnd** (flexible modular editor), **tscircuit** (TypeScript/React-based PCB design), **eSim** (circuit design + simulation + PCB) .
-
-- **Analog Simulation**: **Xyce** (parallel SPICE), **Splice** (modern SPICE with better errors), **Gnucap** (mixed-signal simulator).
-
-- **Layout Verification**: **Netgen** (LVS), **Magic** (DRC + extraction), **KLayout** (DRC/LVS/PEX) .
-
-- **FPGA**: **Yosys + nextpnr** (open-source FPGA flow), **SymbiFlow** (now F4PGA).
-
-
-
-**Frameworks for building custom systems**: The **IIC-OSIC-Tools** container provides a complete, pre-configured open-source analog/mixed-signal IC design flow with Xschem, Ngspice, Magic, KLayout, and PDK support . For digital design, combine **Yosys + OpenROAD/OpenLane** with an open PDK. For PCB, **KiCad** serves as the integrated environment, with **circuitcore** adding analysis capabilities.
-
-
-
-## How to Contribute
-
-
-
-1. Fork the repo.
-
-2. Add/edit entries in `README.md` (follow existing format).
-
-3. Include: name, link, 1–2 sentence description, and whether it's SaaS or open-source.
-
-4. Submit PR with a short explanation.
-
-
-
-Star the repo if you find it useful!
-
-
-
-## Disclaimer
-
-
-
-- This is a **community-curated** list — not exhaustive and not an endorsement.
-
-- EDA tools handle sensitive IP and manufacturing data; ensure proper access controls and data protection.
-
-- **Open-source reality**: The open-source EDA ecosystem has matured to enable **complete IC design flows** — proven by silicon outcomes like TinyWhisper (4mm² mixed-signal SoC in IHP 130nm) and the 12-bit SAR ADC (SkyWater 130nm) . However, gaps remain in **large-signal noise simulation**, **accurate parasitic extraction for RF**, **scan insertion/pattern generation**, and **documentation quality** . For advanced nodes and production-critical signoff, commercial tools remain dominant.
-
-
+Welcome to the ultimate awesome list for **Electronic Design Automation (EDA)**! This repository tracks premier commercial **SaaS platforms** and high-impact **open-source projects** spanning integrated circuit (IC) design, printed circuit board (PCB) layout, SPICE simulation, static timing analysis (STA), process design kits (PDKs), and open silicon flows. These tools empower chip designers, hardware engineers, researchers, and embedded systems developers to create, simulate, verify, and manufacture custom silicon and production PCBs. 🚀
 
 ---
 
+## 📑 Table of Contents
 
+- [☁️ SaaS & Hosted Commercial Platforms](#-saas--hosted-commercial-platforms)
+- [🔓 Open-Source GitHub Projects](#-open-source-github-projects)
+  - [🖥️ Digital IC Design (RTL to GDSII)](#️-digital-ic-design-rtl-to-gdsii)
+  - [📐 Analog & Mixed-Signal IC Design](#-analog--mixed-signal-ic-design)
+  - [🔌 PCB Design & Layout](#-pcb-design--layout)
+  - [🔍 PCB Analysis & Multiphysics Verification](#-pcb-analysis--multiphysics-verification)
+  - [⚡ HDL Simulation & Verification](#-hdl-simulation--verification)
+  - [💎 Open PDKs (Process Design Kits)](#-open-pdks-process-design-kits)
+  - [🛠️ Design Automation & Layout Utilities](#️-design-automation--layout-utilities)
+  - [📦 Additional Open-Source EDA Options](#-additional-open-source-eda-options)
+- [📈 Star History](#-star-history)
+- [🤝 How to Contribute](#-how-to-contribute)
+- [❤️ Support & Sponsorship](#️-support--sponsorship)
+- [⚠️ Disclaimer](#️-disclaimer)
 
-**Made for IC designers, PCB engineers, hardware startups, and open-silicon advocates.**
+---
 
-Let's make electronic design automation more open, reproducible, and accessible.
+## ☁️ SaaS & Hosted Commercial Platforms
+
+### 📊 Market Size & Industry Structure Analysis 💡
+> The global **Electronic Design Automation (EDA)** market size is estimated at **$16.5 Billion (2026)** and is projected to reach **$28.4 Billion by 2032** growing at a CAGR of ~9.4%. The commercial EDA industry is **highly concentrated** (an oligopoly / winner-take-most structure), where the top 3 giants (**Synopsys**, **Cadence**, and **Siemens EDA**) command over **75% of total market revenue**, driven by extreme R&D barriers, complex IP ecosystems, and tight foundry signoff partnerships.
+
+| Platform / SaaS 🏢 | Enterprise Scale / Valuation 💰 | Starting Pricing Tier 💵 | Free Tier / Trial Limit ⏳ | Key Capabilities & Overview 🛠️ |
+| :--- | :--- | :--- | :--- | :--- |
+| **[Synopsys Fusion Compiler](https://www.synopsys.com/)** | **~$82.5 Billion** Market Cap / **~$6.1B** Revenue | ~$35,000 / user / year (Enterprise License) | 30-day evaluated Cloud Trial via Synopsys Cloud (restricted to evaluation PDKs) | Dominant RTL-to-GDSII implementation platform combining synthesis, place-and-route, and timing optimization for advanced silicon nodes. |
+| **[Cadence Virtuoso](https://www.cadence.com/)** | **~$78.0 Billion** Market Cap / **~$4.6B** Revenue | ~$25,000 / user / year (On-prem / Cloud subscription) | No free tier; 14-day evaluation demo for verified corporate clients | Industry-standard custom IC design platform for analog, RF, and mixed-signal custom silicon circuits. |
+| **[Siemens EDA Xpedition](https://eda.sw.siemens.com/)** | **~$145.0 Billion** (Siemens AG Parent Market Cap) | ~$15,000 / license / year | 30-day full-featured free trial for Xpedition Enterprise Cloud | Enterprise multi-board PCB design platform providing schematic capture, high-speed layout, signal integrity, and manufacturing signoff. |
+| **[Ansys RedHawk](https://www.ansys.com/)** | **~$28.5 Billion** Market Cap / **~$2.3B** Revenue | ~$20,000 / engine license / year | 14-day evaluation trial for engineering teams upon sales contact | Multi-physics power integrity and electromigration (EM/IR) signoff analysis platform for semiconductor IC designs. |
+| **[Keysight ADS](https://www.keysight.com/)** | **~$27.0 Billion** Market Cap / **~$5.4B** Revenue | ~$12,000 / license / year | 30-day free trial license with restricted RF component library export | Advanced Design System (ADS) for RF, microwave, high-speed digital design, and 3D electromagnetic co-simulation. |
+| **[Altium 365](https://www.altium.com/)** | **~$30.0 Billion** (Acquired by Renesas Electronics) | ~$3,850 / user / year (Altium 365 Standard + Designer) | 15-day full access free trial; Free Personal Workspace for viewer collaboration | Cloud-connected PCB design platform enabling real-time co-design, 3D visualization, component management, and cloud manufacturing. |
+| **[Zuken CR-8000](https://www.zuken.com/)** | **~$850 Million** Market Cap | ~$8,500 / seat / year | 30-day evaluation trial via authorized Zuken enterprise partners | 3D multi-board PCB and IC package co-design platform tailored for complex electronic systems and vehicle electronics. |
+| **[Silvaco SmartSpice](https://silvaco.com/)** | **~$350 Million** Market Cap | ~$6,000 / seat / year | 30-day evaluation license upon corporate verification | High-performance analog and mixed-signal circuit simulator for SPICE modeling, Monte Carlo, and custom IC verification. |
+| **[Aldec Riviera-PRO](https://www.aldec.com/)** | **~$120 Million** Private Revenue / Valuation | ~$4,500 / seat / year | 30-day free evaluation trial license for verification engineers | Advanced HDL simulation and verification platform supporting VHDL, Verilog, SystemVerilog, UVM, and SystemC. |
+| **[EasyEDA Pro](https://easyeda.com/)** | **~$80 Million** Valuation (JLCPCB Parent) | ~$9.90 / user / month (Pro Standard Edition) | **Free Forever** basic tier (Unlimited private projects, 2-layer PCB limits, 1,000 cloud components) | Accessible cloud-based schematic capture and PCB layout editor directly linked to JLCPCB manufacturing and component libraries. |
+
+---
+
+## 🔓 Open-Source GitHub Projects
+
+### 🖥️ Digital IC Design (RTL to GDSII)
+
+- **[Yosys](https://github.com/YosysHQ/yosys)** [![Yosys Stars](https://img.shields.io/github/stars/YosysHQ/yosys?style=social&color=white)](https://github.com/YosysHQ/yosys/stargazers) — Framework for Verilog RTL synthesis. Converts Verilog code to gate-level netlists for FPGA and ASIC flows. Serves as the core synthesis engine of open-source digital silicon toolchains. **ISC License**. 🛠️
+- **[OpenROAD](https://github.com/The-OpenROAD-Project/OpenROAD)** [![OpenROAD Stars](https://img.shields.io/github/stars/The-OpenROAD-Project/OpenROAD?style=social&color=white)](https://github.com/The-OpenROAD-Project/OpenROAD/stargazers) — Complete RTL-to-GDSII application implementing place-and-route, floorplanning, CTS, static timing analysis, and PDNSim power analysis. **BSD-3-Clause**. 🛣️
+- **[OpenLane](https://github.com/The-OpenROAD-Project/OpenLane)** [![OpenLane Stars](https://img.shields.io/github/stars/The-OpenROAD-Project/OpenLane?style=social&color=white)](https://github.com/The-OpenROAD-Project/OpenLane/stargazers) — Automated silicon design flow from RTL to GDSII using OpenROAD, Yosys, and Magic. Native support for SKY130, GF180MCU, and IHP SG13G2 PDKs. **Apache-2.0**. 🤖
+- **[OpenSTA](https://github.com/parallaxsw/OpenSTA)** [![OpenSTA Stars](https://img.shields.io/github/stars/parallaxsw/OpenSTA?style=social&color=white)](https://github.com/parallaxsw/OpenSTA/stargazers) — Gate-level static timing analysis (STA) engine designed for high-performance timing signoff in digital IC design flows. **GPL-3.0**. ⏱️
+
+---
+
+### 📐 Analog & Mixed-Signal IC Design
+
+- **[KLayout](https://github.com/KLayout/klayout)** [![KLayout Stars](https://img.shields.io/github/stars/KLayout/klayout?style=social&color=white)](https://github.com/KLayout/klayout/stargazers) — High-performance GDSII/OASIS layout viewer and editor with DRC, LVS, and parasitic extraction support via Python/Ruby scripting APIs. **GPL-3.0**. 🔍
+- **[Magic VLSI](https://github.com/RTimothyEdwards/magic)** [![Magic Stars](https://img.shields.io/github/stars/RTimothyEdwards/magic?style=social&color=white)](https://github.com/RTimothyEdwards/magic/stargazers) — Classic interactive custom IC layout editor providing real-time Design Rule Checking (DRC), layout extraction, and LVS verification. **BSD-3-Clause**. 🪄
+- **[Xschem](https://github.com/StefanSchippers/xschem)** [![Xschem Stars](https://img.shields.io/github/stars/StefanSchippers/xschem?style=social&color=white)](https://github.com/StefanSchippers/xschem/stargazers) — Hierarchical schematic capture editor optimized for custom analog, RF, and mixed-signal VLSI chip design. Netlists to SPICE, VHDL, and Verilog. **GPL-2.0**. ✏️
+- **[Ngspice](https://github.com/ngspice/ngspice)** [![Ngspice Stars](https://img.shields.io/github/stars/ngspice/ngspice?style=social&color=white)](https://github.com/ngspice/ngspice/stargazers) — Mixed-level SPICE circuit simulator incorporating XSPICE and CIDER extensions. Features DC, AC, transient, and digital co-simulation modes. **BSD-3-Clause**. ⚡
+- **[Xyce](https://github.com/Xyce/Xyce)** [![Xyce Stars](https://img.shields.io/github/stars/Xyce/Xyce?style=social&color=white)](https://github.com/Xyce/Xyce/stargazers) — High-performance parallel circuit simulator developed by Sandia National Laboratories for large-scale transistor signoff simulation. **GPL-3.0**. ⚛️
+
+---
+
+### 🔌 PCB Design & Layout
+
+- **[KiCad](https://gitlab.com/kicad/code/kicad)** [![KiCad Stars](https://img.shields.io/github/stars/KiCad/kicad-source-mirror?style=social&color=white)](https://github.com/KiCad/kicad-source-mirror/stargazers) — Industry-leading open-source PCB suite with schematic capture, 32-copper-layer layout, push-and-shove router, 3D STEP viewer, and Ngspice integration. **GPLv3**. 🎛️
+- **[Fritzing](https://github.com/fritzing/fritzing-app)** [![Fritzing Stars](https://img.shields.io/github/stars/fritzing/fritzing-app?style=social&color=white)](https://github.com/fritzing/fritzing-app/stargazers) — User-friendly electronics design application for breadboard prototyping, schematic creation, and beginner-friendly PCB layout. **GPLv3**. 🎨
+- **[atopile](https://github.com/atopile/atopile)** [![atopile Stars](https://img.shields.io/github/stars/atopile/atopile?style=social&color=white)](https://github.com/atopile/atopile/stargazers) — Code-first PCB design framework allowing engineers to describe circuit boards using modern software languages, modules, and version control. **MIT**. 💻
+- **[LibrePCB](https://github.com/LibrePCB/LibrePCB)** [![LibrePCB Stars](https://img.shields.io/github/stars/LibrePCB/LibrePCB?style=social&color=white)](https://github.com/LibrePCB/LibrePCB/stargazers) — Intuitive C++/Qt EDA suite for schematic entry and PCB layout featuring modular component management and clean file specifications. **GPLv3**. 📦
+- **[tscircuit](https://github.com/tscircuit/tscircuit)** [![tscircuit Stars](https://img.shields.io/github/stars/tscircuit/tscircuit?style=social&color=white)](https://github.com/tscircuit/tscircuit/stargazers) — TypeScript and React framework for building real electronic circuit boards using code, automated autorouting, and web rendering. **MIT**. ⚛️
+- **[Horizon EDA](https://github.com/horizon-eda/horizon)** [![Horizon EDA Stars](https://img.shields.io/github/stars/horizon-eda/horizon?style=social&color=white)](https://github.com/horizon-eda/horizon/stargazers) — Feature-complete EDA suite built from scratch for flexible schematic capture, component management, and high-speed PCB design. **GPL-3.0**. 🌅
+
+---
+
+### 🔍 PCB Analysis & Multiphysics Verification
+
+- **[OpenEMS](https://github.com/thliebig/openEMS)** [![OpenEMS Stars](https://img.shields.io/github/stars/thliebig/openEMS?style=social&color=white)](https://github.com/thliebig/openEMS/stargazers) — Electromagnetic field solver utilizing the FDTD method for signal integrity, power integrity, and RF antenna analysis on PCBs. **GPL-3.0**. 📡
+- **[OpenFASOC](https://github.com/idea-fasoc/OpenFASOC)** [![OpenFASOC Stars](https://img.shields.io/github/stars/idea-fasoc/OpenFASOC?style=social&color=white)](https://github.com/idea-fasoc/OpenFASOC/stargazers) — Autonomous analog layout generators (e.g. glayout) providing PDK-agnostic programmatic generation of analog circuits in Python. **Apache-2.0**. 🤖
+
+---
+
+### ⚡ HDL Simulation & Verification
+
+- **[Verilator](https://github.com/verilator/verilator)** [![Verilator Stars](https://img.shields.io/github/stars/verilator/verilator?style=social&color=white)](https://github.com/verilator/verilator/stargazers) — High-speed Verilog/SystemVerilog simulator that compiles HDL code into cycle-accurate optimized C++/SystemC models. **LGPL-3.0 / Artistic-2.0**. ⚡
+- **[Icarus Verilog](https://github.com/steveicarus/iverilog)** [![Icarus Verilog Stars](https://img.shields.io/github/stars/steveicarus/iverilog?style=social&color=white)](https://github.com/steveicarus/iverilog/stargazers) — Established Verilog IEEE-1364 simulation and synthesis engine for digital verification and ASIC testing. **GPL-2.0**. 🐊
+- **[GHDL](https://github.com/ghdl/ghdl)** [![GHDL Stars](https://img.shields.io/github/stars/ghdl/ghdl?style=social&color=white)](https://github.com/ghdl/ghdl/stargazers) — Comprehensive VHDL analyzer and simulator supporting VHDL-1987 through VHDL-2019 standards with LLVM/GCC backend support. **GPL-2.0**. 📑
+- **[Cocotb](https://github.com/cocotb/cocotb)** [![Cocotb Stars](https://img.shields.io/github/stars/cocotb/cocotb?style=social&color=white)](https://github.com/cocotb/cocotb/stargazers) — Coroutine-based co-simulation verification framework for writing VHDL and Verilog RTL testbenches in pure Python. **BSD-3-Clause**. 🐍
+- **[NVC](https://github.com/nickg/nvc)** [![NVC Stars](https://img.shields.io/github/stars/nickg/nvc?style=social&color=white)](https://github.com/nickg/nvc/stargazers) — High-performance VHDL compiler and simulator with native experimental Verilog mixed-language co-simulation capabilities. **GPL-3.0**. 🚀
+
+---
+
+### 💎 Open PDKs (Process Design Kits)
+
+- **[SkyWater SKY130 PDK](https://github.com/google/skywater-pdk)** [![SkyWater SKY130 Stars](https://img.shields.io/github/stars/google/skywater-pdk?style=social&color=white)](https://github.com/google/skywater-pdk/stargazers) — 130nm open-source commercial PDK created by Google and SkyWater Technology for public microelectronics manufacturing. **Apache-2.0**. 🌊
+- **[IHP SG13G2 Open PDK](https://github.com/IHP-GmbH/IHP-Open-PDK)** [![IHP Open PDK Stars](https://img.shields.io/github/stars/IHP-GmbH/IHP-Open-PDK?style=social&color=white)](https://github.com/IHP-GmbH/IHP-Open-PDK/stargazers) — 130nm SiGe BiCMOS open PDK from IHP Leibniz Institute designed for high-frequency RF and mixed-signal silicon production. **Apache-2.0**. 🔬
+- **[GlobalFoundries GF180MCU PDK](https://github.com/google/gf180mcu-pdk)** [![GF180MCU Stars](https://img.shields.io/github/stars/google/gf180mcu-pdk?style=social&color=white)](https://github.com/google/gf180mcu-pdk/stargazers) — 180nm bulk CMOS open-source PDK targeting 3.3V/6V microcontroller processes from Google and GlobalFoundries. **Apache-2.0**. 🌐
+
+---
+
+### 🛠️ Design Automation & Layout Utilities
+
+- **[nextpnr](https://github.com/YosysHQ/nextpnr)** [![nextpnr Stars](https://img.shields.io/github/stars/YosysHQ/nextpnr?style=social&color=white)](https://github.com/YosysHQ/nextpnr/stargazers) — Portable FPGA place-and-route tool framework supporting Lattice iCE40, ECP5, Gowin, and Nexus architectures. **ISC**. 🧩
+- **[gdsfactory](https://github.com/gdsfactory/gdsfactory)** [![gdsfactory Stars](https://img.shields.io/github/stars/gdsfactory/gdsfactory?style=social&color=white)](https://github.com/gdsfactory/gdsfactory/stargazers) — Python library for algorithmic layout generation of photonic, analog, RF, MEMS, and quantum integrated circuits. **MIT**. 🐍
+- **[F4PGA](https://github.com/chipsalliance/f4pga)** [![F4PGA Stars](https://img.shields.io/github/stars/chipsalliance/f4pga?style=social&color=white)](https://github.com/chipsalliance/f4pga/stargazers) — Fully open-source toolchain for FPGA architecture development and bitstream generation under CHIPS Alliance. **Apache-2.0**. 🏗️
+- **[eSim](https://github.com/FOSSEE/eSim)** [![eSim Stars](https://img.shields.io/github/stars/FOSSEE/eSim?style=social&color=white)](https://github.com/FOSSEE/eSim/stargazers) — Open-source EDA tool for circuit design, simulation, analysis, and PCB design integrated with KiCad and Ngspice. **GPL-3.0**. 🎓
+- **[CACE](https://github.com/efabless/cace)** [![CACE Stars](https://img.shields.io/github/stars/efabless/cace?style=social&color=white)](https://github.com/efabless/cace/stargazers) — Automatic circuit characterization engine for running multi-corner PVT simulations using specifications defined in YAML. **Apache-2.0**. 🧪
+- **[IIC-RALF](https://github.com/iic-jku/IIC-RALF)** [![IIC-RALF Stars](https://img.shields.io/github/stars/iic-jku/IIC-RALF?style=social&color=white)](https://github.com/iic-jku/IIC-RALF/stargazers) — Reinforcement learning framework for automated analog circuit layout generation utilizing Magic as layout backend. **Apache-2.0**. 🧠
+- **[Splice](https://github.com/Voidheart88/splice)** [![Splice Stars](https://img.shields.io/github/stars/Voidheart88/splice?style=social&color=white)](https://github.com/Voidheart88/splice/stargazers) — Ultra-fast SPICE simulator written in Rust, featuring parallel element evaluation and MessagePack remote execution. **Apache-2.0**. ⚡
+
+---
+
+### 📦 Additional Open-Source EDA Options
+
+- **PCB Editors**: **pcb-rnd** (modular PCB layout editor), **eSim** (integrated circuit & PCB flow).
+- **Analog & SPICE Simulators**: **Gnucap** (GNU circuit analysis package), **Splice** (parallel SPICE in Rust).
+- **Physical Verification & LVS**: **Netgen** (LVS netlist comparison tool), **Magic** (DRC/Extraction engine), **KLayout** (DRC/LVS signoff).
+- **FPGA Toolchains**: **Yosys + nextpnr** (open FPGA flow), **F4PGA** (formerly SymbiFlow).
+- **Complete AMS Environments**: **IIC-OSIC-Tools** (Dockerized full-flow environment with Xschem, Ngspice, Magic, KLayout, and SKY130 PDK).
+
+---
+
+## 📈 Star History
+
+[![Star History Chart](https://star-history.dera.page/svg?repos=ishandutta2007/Awesome-Electronic-Design-Automation&type=date&legend=top-left)](https://star-history.dera.page/#ishandutta2007/Awesome-Electronic-Design-Automation&type=date&legend=top-left)
+
+---
+
+## 🤝 How to Contribute
+
+Contributions to expand and update this curated EDA list are warmly welcomed! 🌟
+
+1. 🍴 **Fork** this repository.
+2. 📝 **Add or edit** entries in `README.md` maintaining table and badge formatting.
+3. 🔎 Ensure descriptions remain factual, concise, and include standard SPDX license tags.
+4. 📬 Submit a **Pull Request** detailing your changes.
+
+Check out our full collection of awesome resources at [Awesome-Awesome-Awesome](https://github.com/ishandutta2007/Awesome-Awesome-Awesome)! 🚀
+
+---
+
+## ❤️ Support & Sponsorship
+
+If you find this Electronic Design Automation directory helpful in your hardware or silicon projects, please consider supporting the project! 💖
+
+- ⭐ **Star this repository** to help others discover open-source EDA tools.
+- 🔀 **Fork and share** it with your hardware, chip design, and PCB engineering communities.
+- ☕ **Buy me a coffee / Sponsor**: Support ongoing maintenance on the [GitHub Sponsor Dashboard](https://github.com/sponsors/ishandutta2007).
+
+---
+
+## ⚠️ Disclaimer
+
+- This directory is **community-curated** for educational and reference purposes. It does not constitute commercial endorsement.
+- **Open-Source vs. Enterprise Signoff**: The open-source EDA ecosystem has achieved remarkable milestones, delivering fully functional silicon chips (such as TinyWhisper in IHP 130nm). However, commercial suites (Cadence, Synopsys, Siemens EDA) remain dominant for ultra-advanced silicon nodes (<5nm), high-frequency RF signoff, and certified tapeouts.
+
+---
+
+<p align="center">
+  <b>Designed for Microchip Designers, PCB Engineers, Silicon Innovators & Open-Hardware Advocates.</b> ⚡<br>
+  <i>Let's make electronic design automation more open, accessible, and powerful for everyone!</i>
+</p>
